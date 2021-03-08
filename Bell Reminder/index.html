@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bell Reminder</title>
+
+        <link rel="stylesheet" href="./css/stylesheet.css" />
+        <link rel="stylesheet" href="./css/material-ui.css" />
+        <link rel="stylesheet" href="./css/material-icons.css" />
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <i class="settings noselect navigationbutton navigate-back inactive material-icons">settings</i>
+        <div class="settings-container">
+            <div class="chroma-settings">
+                <h5>Chroma Settings</h2>
+                <button class="chroma-button">Chroma: Wavy</button>
+                <label for="i0" class="block">Rainbow Saturation: </label>
+                <input type="number" min="1" max="100" class="center color-saturation" id="i0"><br/>
+                <label for="i1" class="block">Rainbow Luminance: </label>
+                <input type="number" min="1" max="100" class="center color-luminance" id="i1"><br/>
+                <label for="i2" class="block">Rainbow Speed: </label>
+                <input type="number" min="1" max="5" class="center color-speed" id="i2"><br/>
+                <label for="i3" class="block">Rainbow Range: </label>
+                <input type="number" class="center color-range" id="i3"><br/>
+                <label for="i4" class="block">Select a color: </label>
+                <input type="color" class="center color-input" id="i4"><br/>
+            </div>
+            <div class="clock-settings">
+                <h5>Clock Settings</h2>
+                <label for="i5">Military Time: </label>
+                <input type="checkbox" class="military-time" id="i5">
+                <label for="i6">Seconds: </label>
+                <input type="checkbox" class="seconds-time" id="i6"><br/>
+                <label for="i7" class="block">Background URL: </label>
+                <input type="text" class="center background" id="i7"><br/>
+                <label for="i8">Bell Ring Sound: </label>
+                <input type="checkbox" class="bell-ring" id="i8">
+            </div>
+            <input type="button" class="submit" value="Save Settings">
+            <input type="button" class="reset" value="Reset Settings">
+        </div>
+        <div class="time-container">
+            <span class="time-clock">0:00 AM</span><br />
+            <span class="time-period">Period 0 (0 Minutes left)</span>
+        </div>
+    </body>
+</html>

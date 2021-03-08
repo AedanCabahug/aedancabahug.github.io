@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+body {
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    color: #FFFFFF;
+    font-family: Roboto, Calibri, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.time-container {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    width: 90vw;
+    position: absolute;
+    text-align: center;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 32px;
+}
+
+.settings-container {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    width: 90vw;
+    position: fixed;
+    text-align: center;
+
+    opacity: 0;
+    z-index: 999;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 32px;
+
+    transition: 1s linear;
+}
+
+.settings {
+    background-size: cover;
+    font-size: 20px !important;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+label {
+    font-size: 20px;
+}
+
+.block {
+    display: block;
+}
+
+.center {
+    outline: none;
+    width: 200px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.chroma-button {
+    outline: none;
+    width: 200px;
+    height: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background: none;
+    color: white;
+    outline: none;
+}
+
+h5, h4 {
+    margin: 0;
+}
